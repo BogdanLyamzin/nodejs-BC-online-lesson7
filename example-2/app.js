@@ -23,7 +23,7 @@ app.set("view engine", "ejs");
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
-
+//{idr6yy: tyty}
 app.use(
     session({
         secret: "secret-word",

@@ -48,7 +48,7 @@ router.post('/registration', async (req, res, next) => {
             return res.redirect('/registration')
         }
         const newUser = new User({ username, email })
-        newUser.setPassword(password)
+        newUser.setPassword(password) 
         //если нет - добавляем пользователя в базу
         await newUser.save()
         req.flash('message', 'Вы успешно зарегистрировались')

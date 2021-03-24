@@ -10,7 +10,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const userRouter = require("./api");
+const {userRouter} = require("./api");
 
 app.use("/api/users", userRouter);
 
